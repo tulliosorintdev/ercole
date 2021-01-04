@@ -150,7 +150,7 @@ func (ctrl *APIController) SearchClustersXLSX(w http.ResponseWriter, r *http.Req
 	utils.WriteXLSXResponse(w, sheets)
 }
 
-// GetCluster get cluster data using the filters in the request
+// GetCluster get cluster data using the filters in the request (tullio)
 func (ctrl *APIController) GetCluster(w http.ResponseWriter, r *http.Request) {
 	var olderThan time.Time
 	var err utils.AdvancedErrorInterface
